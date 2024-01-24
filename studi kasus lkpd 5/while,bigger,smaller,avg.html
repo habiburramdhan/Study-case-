@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // code javascript menggunakan while
+
+// Assume the 20 numbers are predefined in an array called 'numbers'
+let numbers = [22,332,33,443,323,122,66,89,55];
+
+// Initialize variables
+let sum = 0;
+let max = Number.MIN_SAFE_INTEGER; // Set to the smallest possible integer value
+let min = Number.MAX_SAFE_INTEGER; // Set to the largest possible integer value
+let counter = 0;
+
+// Input Loop using while loop
+while (counter < 20) {
+    // Access the current number from the array
+    let currentNumber = numbers[counter];
+
+    // Update sum
+    sum += currentNumber;
+
+    // Update max if currentNumber is greater
+    if (currentNumber > max) {
+        max = currentNumber;
+    }
+
+    // Update min if currentNumber is smaller
+    if (currentNumber < min) {
+        min = currentNumber;
+    }
+
+    // Increment counter
+    counter++;
+}
+
+// Calculate average
+let average = sum / 20;
+
+// Output the results
+console.log("Bilangan Terbesar: " + max);
+console.log("Bilangan Terkecil: " + min);
+console.log("Rata-rata Bilangan: " + average);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Code javascript menggunakan for =
+
+
+// Assume the 20 numbers are predefined in an array called 'numbers'
+let numbers = [1,2,3,45,67,89,101,112,122,133];
+
+// Initialize variables
+let sum = 0;
+let max = Number.MIN_SAFE_INTEGER; // Tetapkan ke nilai bilangan bulat sekecil 
+let min = Number.MAX_SAFE_INTEGER; // Tetapkan ke nilai bilangan bulat terbesar
+// Input Loop using for loop
+for (let counter = 0; counter < 20; counter++) {
+    
+    // Access the current number from the array
+    let currentNumber = numbers[counter];
+
+    // Update sum
+    sum += currentNumber;
+
+    // Update max if currentNumber is greater
+    if (currentNumber > max) {
+        max = currentNumber;
+    }
+
+    // Update min if currentNumber is smaller
+    if (currentNumber < min) {
+        min = currentNumber;
+    }
+}
+
+// menghitung rata rata
+let average = sum / 20;
+
+// Output 
+console.log("Bilangan Terbesar: " + max);
+console.log("Bilangan Terkecil: " + min);
+console.log("Rata-rata Bilangan: " + average);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function cekTahunKabisat(tahun) {
+    if ((tahun % 400 === 0) || (tahun % 100 !== 0 && tahun % 4 === 0)) {
+        return true; // Tahun kabisat
+    } else {
+        return false; // Bukan tahun kabisat
+    }
+}
+
+// Contoh penggunaan
+for (let tahun =1700 ; tahun <= 2024; tahun++) {
+    if (cekTahunKabisat(tahun)) {
+        console.log(`${tahun} adalah tahun kabisat.`);
+    } else {
+        console.log(`${tahun} bukan tahun kabisat.`);
+    }
+}
+    </script>
+</body>
+</html>
